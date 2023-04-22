@@ -1,0 +1,8 @@
+package less;
+
+public class Square extends Rectangle{
+    public Square(Double width) {
+        super(width, width, true);
+    }
+
+}
