@@ -1,26 +1,14 @@
 package less.base;
 
 public abstract class Polygon extends Figure implements Peremetr {
-    public Polygon(Integer nSides) {
-        this.nSides = nSides;
-    }
 
-    public Integer getnSides() {
-        return nSides;
-    }
-
-    public void setnSides(Integer nSides) {
+    public Polygon(Integer nSides, Double[] lSides) {
         this.nSides = nSides;
+        this.lSides = lSides;
     }
 
     public Double[] getlSides() {
         return lSides;
-    }
-
-    public void setlSides(Double[] lSides) {
-        for (int i = 0; i < lSides.length; i++) {
-            this.lSides[i] = lSides[i];
-        }
     }
 
     private Integer nSides;

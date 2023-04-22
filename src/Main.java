@@ -30,13 +30,13 @@ public class Main {
      */
     public static void main(String[] args) {
         ArrayList<Figure> figDB = new ArrayList<>();
-        figDB.add(new Triangle(Math.random() * 100, Math.random() * 100, Math.random() * 100));
+        figDB.add(new Triangle(3.0, 4.0, 5.0));
         figDB.add(new Square(Math.random() * 100));
         figDB.add(new Rectangle(Math.random() * 100, Math.random() * 100));
         figDB.add(new Circle(Math.random() * 100));
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("    1.Добавить новую фигуру\n" +
+        System.out.println("1.Добавить новую фигуру\n" +
                 "    2.Посчитать периметр у всех фигур\n" +
                 "    3.Посчитать площадь у всех фигур\n" +
                 "    4. Посчитать длины окружностей у всех фигур");
@@ -50,7 +50,7 @@ public class Main {
                 int type = scan.nextInt();
                 switch (type) {
                     case 1:
-                        figDB.add(new Triangle(Math.random() * 100, Math.random() * 100, Math.random() * 100));
+                        figDB.add(new Triangle(3.0, 4.0, 5.0));
                         break;
                     case 2:
                         figDB.add(new Square(Math.random() * 100));
